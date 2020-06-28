@@ -6,10 +6,12 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "publish": "vue-cli-service build --target lib --name vuepfc --dest dist lib/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "lodash.debounce": "^4.0.8",
     "vue": "^2.6.11"
   },
   "devDependencies": {

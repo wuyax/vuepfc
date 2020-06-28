@@ -1,29 +1,47 @@
 # vuepfc
+**vuepfc**插件，提供一个非常有用的Vue指令，它用于阻止用户快速连续点击的行为。用户第一次点击的时候会立即调用`callback`,`wait`(500ms)时间内的重复调用都会被取消。
 
-## Project setup
-```
-npm install
-```
+## Usage
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+```bash
+npm install vuepfc --save
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+```js
+// install plugin
+import vuepfc from 'vuepfc'
+
+Vue.use(vuepfc)
 ```
 
-### Run your unit tests
-```
-npm run test:unit
+简单使用
+```js
+// template
+<button v-pfc="clickMe">vue pfc</button>
+
+// script
+methods: {
+  clickMe() {
+    console.log('click')
+  }
+}
 ```
 
-### Lints and fixes files
-```
-npm run lint
+自定义时间间隔
+`wait`默认时间是`500ms`，你可以根据需要修改该参数。
+```js
+// template
+<button v-pfc="{wait: 300, callback: clickMe}">vue pfc</button>
+
+// script
+methods: {
+  clickMe() {
+    console.log('click')
+  }
+}
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+支持的修饰器
+阻止冒泡：`v-pfc.stop = callback`
+
+阻止默认行为：`v-pfc.prevent = callback`

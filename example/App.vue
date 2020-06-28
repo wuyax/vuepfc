@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button v-pfc="clickMe">vue pfc</button>
+    <p>{{ clickTimes }} times</p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {},
+  data() {
+    return {
+      clickTimes: 0
+    }
+  },
+  methods: {
+    clickMe() {
+      this.clickTimes++
+    }
   }
 }
 </script>
