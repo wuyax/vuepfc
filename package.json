@@ -1,7 +1,11 @@
 {
   "name": "vuepfc",
   "version": "0.1.0",
-  "private": true,
+  "description": "Vue directive to prevent fast click",
+  "main": "dist/vuepfc.umd.min.js",
+  "keyword": "vuejs directive debounce fast-click",
+  "private": false,
+  "author": "wuyax",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
