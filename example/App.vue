@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <button v-pfc="clickMe">vue pfc</button>
-    <p>{{ clickTimes }} times</p>
+    <p>{{ count }} times</p>
   </div>
 </template>
 
@@ -11,12 +11,13 @@ export default {
   components: {},
   data() {
     return {
-      clickTimes: 0
+      count: 0
     }
   },
+  mounted() {},
   methods: {
     clickMe() {
-      this.clickTimes++
+      this.count++
     }
   }
 }
