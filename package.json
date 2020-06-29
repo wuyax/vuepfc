@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "description": "Vue directive to prevent fast click",
   "main": "dist/vuepfc.umd.min.js",
-  "keyword": "vuejs directive debounce fast-click",
+  "keywords": ["vuejs", "directive", "debounce", "fast-click"],
   "private": false,
   "author": "wuyax",
+  "license": "MIT",
+  "homepage": "https://github.com/wuyax/vuepfc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuyax/vuepfc.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
