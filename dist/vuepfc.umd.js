@@ -633,7 +633,7 @@ var lodash_debounce_default = /*#__PURE__*/__webpack_require__.n(lodash_debounce
 
 function install(Vue) {
   /**
-   * 指令绑定的值
+   * 回调函数构造器
    * @param {any} value function or object
    */
   var callback = function callback() {
@@ -642,8 +642,10 @@ function install(Vue) {
         value = binding.value;
     return lodash_debounce_default()(function (e) {
       if (modifiers.stop) {
+        // 停止冒泡
         e.stopPropagation();
       } else if (modifiers.prevent) {
+        // 阻止默认行为
         e.preventDefault();
       }
 
@@ -662,7 +664,7 @@ function install(Vue) {
 
   var callbackRepo = function callbackRepo() {};
   /**
-   * 自定义指令，连续点击问题
+   * 自定义指令，阻止快速连续点击
    * v-pfc='{wait: 300, callback: callbackFunc}'
    * v-pfc='callBackFun'
    */
@@ -670,7 +672,7 @@ function install(Vue) {
 
   Vue.directive('pfc', {
     inserted: function inserted(el, binding) {
-      // 监听键盘收起事件
+      // 构建回调函数
       callbackRepo = callback(binding);
       el.addEventListener('click', callbackRepo);
     },
@@ -678,12 +680,12 @@ function install(Vue) {
       el.removeEventListener('click', callbackRepo);
     }
   });
-} // 通过script标签引入
+} // 通过script标签形式引入
 
 
-if (typeof window !== 'undefined' && window.Vue && window.store) {
-  // window.cmlConfig 是可选的参数
-  install(window.Vue, window.store, window.cmlConfig);
+if (typeof window !== 'undefined' && window.Vue) {
+  // 安装
+  install(window.Vue);
 }
 
 /* harmony default export */ var lib = ({
