@@ -1,6 +1,15 @@
 # vuepfc
 **vuepfc**插件，提供一个非常有用的Vue指令，它用于阻止用户快速的连续点击行为。用户第一次点击的时候会立即调用`callback`,`wait`(500ms)时间内的重复调用都会被取消。
 
+<p align="center">
+  <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/badge/test-pass-brightgreen" alt="Test"></a>
+  <a href="https://npmcharts.com/compare/vue?minimal=true"><img src="https://img.shields.io/npm/dm/vuepfc?sanitize=true" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/npm/v/vuepfc?sanitize=true" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/npm/l/vuepfc?sanitize=true" alt="License"></a>
+  <a href="https://github.com/wuyax/vuepfc/issues"><img src="	https://img.shields.io/github/issues/wuyax/vuepfc" alt="Issuse"></a>
+  <br>
+</p>
+
 ## Usage
 
 ```bash
