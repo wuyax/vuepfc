@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/badge/test-pass-brightgreen" alt="Test"></a>
-  <a href="https://www.npmjs.com/package/vuepfc" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/npm/dm/vuepfc?sanitize=true" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/npm/v/vuepfc?sanitize=true" alt="Version"></a>
   <a href="https://www.npmjs.com/package/vuepfc"><img src="https://img.shields.io/npm/l/vuepfc?sanitize=true" alt="License"></a>
   <a href="https://github.com/wuyax/vuepfc/issues"><img src="https://img.shields.io/github/issues/wuyax/vuepfc" alt="Issuse"></a>
