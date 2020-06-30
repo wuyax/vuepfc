@@ -1,9 +1,14 @@
 {
   "name": "vuepfc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue directive to prevent fast click",
   "main": "dist/vuepfc.umd.min.js",
-  "keywords": ["vuejs", "directive", "debounce", "fast-click"],
+  "keywords": [
+    "vuejs",
+    "directive",
+    "debounce",
+    "fast-click"
+  ],
   "private": false,
   "author": "wuyax",
   "license": "MIT",
